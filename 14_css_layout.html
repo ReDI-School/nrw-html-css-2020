@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML &amp; CSS - ReDI</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/structure.css">
+</head>
+<body>
+<header id="header">
+<div class="thislesson">
+<h1><a href="all.html"><i class="fa fa-bars"></i></a> CSS Layout</h1>
+<h5>Document Flow | Basic Display types</h5>
+</div>
+<div class="thiscourse">
+  <h3>HTML&amp;CSS<a href="https://www.redi-school.org">ReDI School</a></h3>
+</div>
+</header>
+<section id="content">
+
+  <h2>Document Flow</h2>
+
+  <p>Document flow refers to the way the browser positions elements on the page. The browser starts at the top left of the page and starts placing elements one after another.</p>
+  <p>Document flow is most affected by a property called display. There are two main display properties: block and inline.</p>
+
+  <h4>Display Block</h4>
+
+  <p><strong>Block</strong> elements expand to the <strong>full width</strong> of the available horizontal space. The next element will be placed underneath. A <span class="orange pre">div</span> is an example of a block level element. It expands to the full width of the available space.</p>
+
+  <h4>Display Inline</h4>
+  <p><strong>Inline</strong> level elements are only <strong>as wide as their content</strong>. Multiple inline elements stack up next to each other and can be nested inside block level elements. A <span class="orange pre">span</span> is an example of an inline level element.</p>
+  <p>Block level elements are used for large pieces of content such as headings or text areas. Inline level elements are used to style small areas, such as adding italics to a few words.</p>
+
+
+  <h4>Display Inline-Block</h4>
+  <p>Compared to <span class="orange pre">display: inline</span>, the major difference is that <span class="orange pre">display: inline-block</span> allows to set a <span class="orange pre">width</span> and <span class="orange pre">height</span> on the element.</p>
+  <p>Also, with <span class="orange pre">display: inline-block</span>, the top and bottom <span class="orange pre">margin</span> and <span class="orange pre">padding</span> are respected, but with <span class="orange pre">display: inline</span> they are not.</p>
+  <p>Compared to <span class="orange pre">display: block</span>, the major difference is that <span class="orange pre">display: inline-block</span> does not add a line-break after the element, so the element can sit next to other elements.</p>
+
+<h4>Block level elements</h4>
+  <ul>
+    <li>header, footer, nav, section, main, div, table, form</li>
+    <li>ul, ol, p</li>
+    <li>h1, h2, h3, h4, h5, h6	</li>
+  </ul>
+
+  <h4>Inline level elements</h4>
+    <ul>
+      <li>strong, em</li>
+      <li>span, img, a</li>
+      <li>button, input, label, select, textarea</li>
+    </ul>
+
+<h4>CSS property display</h4>
+    <p>Using the CSS property display we can override the default display setting and change an element to be block or inline.
+This is useful because it's not possible to set the width or height of inline level elements. We can also hide an element by setting <span class="orange pre">display: none;</span></p>
+
+
+  <h4 style="margin-top:3rem;">Layout Example</h4>
+
+  <img src="img/14/1.jpg" width="700" style="margin-top:1rem;" />
+
+
+
+<!--
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<p></p>
+
+-->
+
+
+<div class="space100px"></div>
+
+
+
+
+<div class="externallinks">
+  <h4>Learn more</h4>
+  <ul>
+    <li><a href="https://www.w3schools.com/css/css_display_visibility.asp">CSS Display Property</a><span>W3Schools</span></li>
+    <li><a href="https://www.w3schools.com/css/css_inline-block.asp">CSS Display Inline Block</a><span>W3Schools</span></li>
+  </ul>
+</div>
+
+</section>
+<footer id="footer">
+<h5>ReDI School of Digital Integration | Spring 2019</h5>
+<h6><span class="toolsforteachers">Tools while we prepare the lessons: <a href="https://www.freeformatter.com/html-escape.html">Format HTML to display</a> | <a href="http://embedresponsively.com/">embedresponsively</a> || </span><strong>Tools</strong> | <a href="https://coolors.co/browser/best/1" title="A helpful tool to choose a color palette">CSS colors</a></h6>
+</footer>
+</body>
+</html>

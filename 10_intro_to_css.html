@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML &amp; CSS - ReDI</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/structure.css">
+</head>
+<body>
+<header id="header">
+<div class="thislesson">
+<h1><a href="all.html"><i class="fa fa-bars"></i></a> Intro to CSS</h1>
+<h5>What is CSS | Selectors</h5>
+</div>
+<div class="thiscourse">
+  <h3>HTML&amp;CSS<a href="https://www.redi-school.org">ReDI School</a></h3>
+</div>
+</header>
+<section id="content">
+
+  <h2>What is CSS?</h2>
+
+  <p>CSS stands for Cascading Style Sheet. It describes how HTML elements are to be displayed on different screens and in print. It works on top of the HTML and makes use of the tree-structure of the HTML documents. The HTML elements inherit stylistic properties through CSS. </p>
+
+<h4>How do we write CSS?</h4>
+  <p>Here's a sintax example of a CSS rule:</p>
+
+<pre>
+
+  selector {
+    property: value;
+  }
+
+</pre>
+
+<h5>How does it work?</h5>
+<ul>
+  <li>The selector points to the HTML element you want to style</li>
+  <li>The declaration block contains one or more declarations separated by semicolons.</li>
+  <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+  <li>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</li>
+</ul>
+
+<pre>
+
+  h4 {
+    color: #0066CC;
+    font-style: italic;
+  }
+
+</pre>
+
+<h4 class="lesson10example">This is how the H4 with #0066CC color and italic font style it looks</h4>
+
+
+<h2>Let's see CSS at work</h2>
+
+<p>Here is the <a href="html_exercises/10_museums_css/museums.html">Museum's page</a> example. Let's do some <strong>really basic</strong> styling.</p>
+
+<hr />
+<h2>The box model</h2>
+<p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of margins, borders, padding, and the actual content.</p>
+
+<ul>
+  <li><strong>Content</strong>: The content of the box, where text and images appear</li>
+  <li><strong>Padding</strong>: Clears an area around the content. The padding is transparent</li>
+  <li><strong>Border</strong>: A border that goes around the padding and content</li>
+  <li><strong>Margin</strong>: Clears an area outside the border. The margin is transparent</li>
+</ul>
+
+
+<h3>CSS most used properties</h3>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Values</th>
+    <th>Used with Elements</th>
+  </tr>
+  <tr>
+    <td>color</td>
+    <td>#RRGGBB (Red, Green, Blue hex values)</td>
+    <td>any element that contains text</td>
+  </tr>
+  <tr>
+    <td>text-align</td>
+    <td>left | right | center | justify</td>
+    <td>block elements h1..h6, p, li, etc.</td>
+  </tr>
+  <tr>
+    <td>Text-decoration</td>
+    <td>none | underline | overline | line-through | blink</td>
+    <td>mostly with a (anchor) elements</td>
+  </tr>
+  <tr>
+    <td>text-transformation</td>
+    <td>none | capitalize | uppercase | lowercase</td>
+    <td>any element that contains text</td>
+  </tr>
+  <tr>
+    <td>line-height</td>
+    <td>% or em/rem/px</td>
+    <td>block elements h1..h6, p, li, etc.</td>
+  </tr>
+  <tr>
+    <td>letter-spacing</td>
+    <td>normal or em/rem/px value</td>
+    <td>any element that contains text</td>
+  </tr>
+  <tr>
+    <td>font-family</td>
+    <td>font or font-family [, font or font-family ...]</td>
+    <td>any element that contains text</td>
+  </tr>
+  <tr>
+    <td>font-size</td>
+    <td>em/rem/px value</td>
+    <td>any element that contains text</td>
+  </tr>
+  <tr>
+    <td>font-style</td>
+    <td>normal | italic | oblique</td>
+    <td>any element that contains text</td>
+  </tr>
+  <tr>
+    <td>font-weight</td>
+    <td>normal | bold</td>
+    <td>any element that contains text</td>
+  </tr>
+</table>
+
+</section>
+<footer id="footer">
+<h5>ReDI School of Digital Integration | Spring 2019</h5>
+<h6><span class="toolsforteachers">Tools while we prepare the lessons: <a href="https://www.freeformatter.com/html-escape.html">Format HTML to display</a> | <a href="http://embedresponsively.com/">embedresponsively</a> || </span><strong>Tools</strong> | <a href="https://coolors.co/browser/best/1" title="A helpful tool to choose a color palette">CSS colors</a></h6>
+</footer>
+</body>
+</html>

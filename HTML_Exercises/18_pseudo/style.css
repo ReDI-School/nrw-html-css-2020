@@ -1,0 +1,91 @@
+
+
+body {
+  font-family: sans-serif;
+  background-color: #eaeae6;
+  color: #212121;
+  padding:1em 2em;
+}
+
+h1 {
+  background-color: #1d3557;
+  color: #fff;
+  padding: .3em .6em;
+  font-weight: normal;
+}
+
+
+h2 {
+  border-bottom: 2px solid #457890;
+  padding-bottom: .1em;
+  color: #457890;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 2em;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+
+.museum {
+  border:1px solid #999;
+  background-color: #fdfdf8;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 28%;
+}
+
+#thisisawrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+}
+
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+
+  h1 {
+    background-color: pink;
+    color: blue;
+    font-weight: bold;
+  }
+
+  .museum {
+    width: 45%;
+  }
+
+  img {
+  }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  h1 {
+    background-color: turquoise;
+    color: pink;
+    font-weight: bold;
+  }
+
+  .museum {
+    width: 100%;
+  }
+
+  img {
+  }
+
+
+}

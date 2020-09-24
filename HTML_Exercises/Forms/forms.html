@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="next_page.php" method="GET">
+    <div class="">
+      <label for="first">First name:</label>
+      <input type="text" name="firstname" id="first" value="Flaco">
+    </div>
+    <div class="">
+      <label for="last">Last name:</label>
+      <input type="text" name="lastname" id="last" placeholder="Last Name" title="this is a title">
+    </div>
+    <div class="">
+      <label for="dude">Male</label><input type="radio" name="gender" value="male" id="dude">
+      <label for="chick">Female</label><input type="radio" name="gender" value="female" id="chick">
+      <label for="guess">Other</label><input type="radio" name="gender" value="other" id="guess" checked>
+    </div>
+    <textarea name="name" rows="8" cols="30" required></textarea>
+    <select class="" name="">
+        <option value="first">This is the first one</option>
+        <option value="second">This is the second one</option>
+
+    </select>
+    <button type="button" name="button">here goes the label</button>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+div, header, aside {
+	border:2px solid #000;
+	padding:2%;
+	margin:1rem auto;
+}
+
+#wrapper {
+	background-color:#dd9;
+}
+
+header {
+	background-color:#eee;
+}
+
+#content {
+	width:60%;
+	float:left;
+	background-color:#eee;
+}
+
+aside {
+	width:30%;
+	float:right;
+	background-color:#eee;
+}
+
+.teaser {
+	background-color:#ffd;
+}
+
+img {
+	width:150px;
+}
+
+aside img {
+	display:block;
+	margin-bottom:1rem;
+}
+aside:after,
+div:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/********************* */
+
+/*
+	border:5px solid #f00;
+
+*/
+
+img {
+}
+
+#wrapper img {
+}
+
+#content img {
+}
+
+.teaser.top img {
+}
+
+.teaser .top img {
+}
+
+aside img {
+}
+
+.top img {
+}
+
+header .top img {
+}
+
+#content.top img {
+}
+
+

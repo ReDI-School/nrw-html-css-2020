@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML &amp; CSS - ReDI</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/structure.css">
+<style media="screen">
+img {border: 1px solid #999;}
+</style>
+</head>
+<body>
+<header id="header">
+<div class="thislesson">
+<h1><a href="all.html"><i class="fa fa-bars"></i></a> Responsive Web Design</h1>
+<h5>Introduction and best practices</h5>
+</div>
+<div class="thiscourse">
+  <h3>HTML&amp;CSS<a href="https://www.redi-school.org">ReDI School</a></h3>
+</div>
+</header>
+<section id="content">
+
+
+  <p>Responsive web design (RWD) is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it. </p>
+  <p>By following a RWD approach, we can adapt the same web documents to the multitude of devices available, ranging from tiny phones to huge desktop monitors. This is the easiest and more affordable way to target multiple devices.</p>
+  <p>On the technical side, we need to define the viewport on HTML and work with media queries and flexible media through CSS (yes, we'll get there soon) but most important is to know how the content and the structure of the page will adapt.</p>
+
+  <h4>Example: Slack</h4>
+
+<img src="img/19/slack_1440.jpg">
+
+<div class="threeimages">
+  <img src="img/19/slack_1024.jpg" class="img1">
+  <img src="img/19/slack_768.jpg" class="img2">
+  <img src="img/19/slack_360.jpg" class="img3">
+
+</div>
+
+
+<div class="space100px"></div>
+
+<h4>Example: Google</h4>
+
+<img src="img/19/google_1440.jpg">
+
+<div class="threeimages">
+<img src="img/19/google_1024.jpg" class="img1">
+<img src="img/19/google_768.jpg" class="img2">
+<img src="img/19/google_360.jpg" class="img3">
+
+</div>
+
+  <ul>
+    <li>What happened with the content blocks?</li>
+    <li>What happened with the font sizes?</li>
+    <li>What happened with the images?</li>
+  </ul>
+
+
+
+<h4>How does it work</h4>
+<ul>
+  <li>We give the device the content and the structure with HTML</li>
+  <li>We tell how to display and style it with CSS</li>
+  <li>We ask the device the screen size (and/or device type and/or orientation) and tell it what to change. </li>
+</ul>
+
+<p>For example, we have a blog. On the main page we show the content (the last 10 posts) and the extras (a list of the most popular ones and a few widgets).</p>
+
+<p>To make this page responsive, we need to ask the device: if you are a laptop or bigger, please (always important to be nice) display the content and the extras side by side. Take 2/3 for the content and 1/3 for the extras.</p>
+
+<p>If you are a tablet or phone, display the extras below the content and use the full width of the screen for each.</p>
+
+<p>In css, the first part could be</p>
+
+<pre>
+  #main-page {
+    display: flex;
+  }
+
+  #main-page #content {
+    width: 66%;
+  }
+
+  #main-page #extras {
+    width: 34%;
+  }
+</pre>
+
+<div class="space50px"></div>
+
+<p>On the second case, it could be </p>
+
+<pre>
+  #main-page {
+    display: flex;
+  flex-direction: column;
+  }
+
+  #main-page #content,
+  #main-page #extras {
+    width: 100%;
+  }
+</pre>
+
+<p>Which takes us to... <a href="20_media_queries.html">media queries</a>.</p>
+
+<div class="space100px"></div>
+
+
+
+
+<div class="externallinks">
+  <h4>Learn more</h4>
+  <ul>
+    <li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Responsive Web Design - What It Is And How To Use It</a><span>Smashing Magazine</span></li>
+    <li><a href="https://alistapart.com/article/responsive-web-design">Responsive Web Design</a><span>Alistapart</span></li>
+    <li><a href="https://mediaqueri.es/">Design examples</a><span>Mediaqueri.es</span></li>
+  </ul>
+</div>
+<!--
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<p></p>
+
+-->
+
+
+
+
+
+
+
+
+</section>
+<footer id="footer">
+<h5>ReDI School of Digital Integration | Spring 2019</h5>
+<h6><span class="toolsforteachers">Tools while we prepare the lessons: <a href="https://www.freeformatter.com/html-escape.html">Format HTML to display</a> | <a href="http://embedresponsively.com/">embedresponsively</a> || </span><strong>Tools</strong> | <a href="https://coolors.co/browser/best/1" title="A helpful tool to choose a color palette">CSS colors</a></h6>
+</footer>
+</body>
+</html>

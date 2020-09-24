@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML &amp; CSS - ReDI</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/structure.css">
+</head>
+<body>
+<header id="header">
+<div class="thislesson">
+<h1><a href="all.html"><i class="fa fa-bars"></i></a> HTML Tables</h1>
+<h5>Theory and best practices</h5>
+</div>
+<div class="thiscourse">
+  <h3>HTML&amp;CSS<a href="https://www.redi-school.org">ReDI School</a></h3>
+</div>
+</header>
+<section id="content">
+
+  <h2>HTML Tables</h2>
+
+  <p>The table element represents data with more than one dimension, in the form of a table. Tables have rows, columns, and cells given by their descendants. The rows and columns form a grid; a table’s cells must completely cover that grid without overlap.</p>
+  <p>An HTML table is defined with the <span class="orange pre">&lt;table&gt;</span> tag.</p>
+
+
+  <p>Each <strong>table row</strong> is defined with the <span class="orange pre">&lt;tr&gt;</span> tag. A <strong>table header</strong> is defined with the <span class="orange pre">&lt;th&gt;</span> tag. By default, table headings are bold and centered. A <strong>table data/cell</strong> is defined with the <span class="orange pre">&lt;td&gt;</span> tag.</p>
+
+  <h4>Example</h4>
+  <table style="width: 50%;" border="1">
+    <caption>
+      Bundesliga
+    </caption>
+    <tr>
+      <th>Position</th>
+      <th>Team</th>
+      <th>Matches Played</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Dortmund</td>
+      <td>6</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Hoffenheim</td>
+      <td>6</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Bayern Muenchen</td>
+      <td>6</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hannover 96</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+  </table>
+
+<pre>
+  &lt;table&gt;
+    &lt;caption&gt;
+      Bundesliga
+    &lt;/caption&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Position&lt;/th&gt;
+      &lt;th&gt;Team&lt;/th&gt;
+      &lt;th&gt;Matches Played&lt;/th&gt;
+      &lt;th&gt;Points&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Dortmund&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Hoffenheim&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Bayern Muenchen&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Hannover 96&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;12&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+</pre>
+
+
+
+  <p>The <span class="orange pre">&lt;thead&gt;</span> tag is used to group header content in an HTML table. It is used in conjunction with the <span class="orange pre">&lt;tbody&gt;</span> and <span class="orange pre">&lt;tfoot&gt;</span> elements to specify each part of a table (header, body, footer).</p>
+
+<p>Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.</p>
+
+<h4>Examples</h4>
+<p>Another examples of tables can be found in tennis scoreboards, stock markets, weather widgets, calendars etc. Tables offer interesting styling options. We can practice with this <a href="html_exercises/16_tables/nasdaq.html">stock market table</a>.</p>
+
+<!--
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<p></p>
+
+-->
+
+
+<div class="space100px"></div>
+
+
+
+
+<div class="externallinks">
+  <h4>Learn more</h4>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a><span>W3Schools</span></li>
+    <li><a href="https://css-tricks.com/complete-guide-table-element/">A Complete Guide to the Table Element</a><span>CSS-Tricks</span></li>
+  </ul>
+</div>
+
+</section>
+<footer id="footer">
+<h5>ReDI School of Digital Integration | Spring 2019</h5>
+<h6><span class="toolsforteachers">Tools while we prepare the lessons: <a href="https://www.freeformatter.com/html-escape.html">Format HTML to display</a> | <a href="http://embedresponsively.com/">embedresponsively</a> || </span><strong>Tools</strong> | <a href="https://coolors.co/browser/best/1" title="A helpful tool to choose a color palette">CSS colors</a></h6>
+</footer>
+</body>
+</html>
