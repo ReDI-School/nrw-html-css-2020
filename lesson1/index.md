@@ -9,8 +9,8 @@ In this course we will learn how websites are made and teach you how to build yo
 
 ## Teachers
 
-* Vincent Obigwe
-* Seun Martins
-* Jessica De Rosa
-* Heni Lovebird
-* Baris Göral
+* Vincent
+* Seun
+* Jessica
+* Heni
+* Baris
