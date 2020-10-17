@@ -41,10 +41,10 @@ used. Like this:
 
 ## Introducing more semantic tags
 
-- <nav>
-- <header>
-- <article>
-- <section>
-- <footer>
+- `<nav>`
+- `<header>`
+- `<article>`
+- `<section>`
+- `<footer>`
 
-Here's an example of using these tags in our sample [Recipe page](./recipe-site.html)
+Here's an example of using these tags in our sample [Recipe page](./lesson6/recipe-site.html)
