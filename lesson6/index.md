@@ -39,3 +39,12 @@ used. Like this:
 
 ![Paper prototype](prototype.jpg)
 
+## Introducing more semantic tags
+
+- <nav>
+- <header>
+- <article>
+- <section>
+- <footer>
+
+Here's an example of using these tags in our sample [Recipe page](./recipe-site.html)
