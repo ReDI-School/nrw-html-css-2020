@@ -47,4 +47,4 @@ used. Like this:
 - `<section>`
 - `<footer>`
 
-Here's an example of using these tags in our sample [Recipe page](./lesson6/recipe-site.html)
+Here's an example of using these tags in our sample [Recipe page](./recipe-site.html)
