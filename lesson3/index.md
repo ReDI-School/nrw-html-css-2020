@@ -1,40 +1,86 @@
 ---
-title: What We Need
-nav_order: 3
+title: HTML Basics
+nav_order: 5
 ---
 
-# What We Need
+# HTML Basics
 
-## Visual Studio Code
+**Doctype, headings, paragraphs, lists**
 
-Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for 
-Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich 
-ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET)
-You can learn more and also download it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+## The <!DOCTYPE> Declaration
 
-![Visual Studio Code](vscode.png)
+The <!DOCTYPE> Declaration represents the document type, and helps browsers to display web pages correctly. It must only
+appear once, at the top of the page (before any HTML tags).
 
-## Browser
+- The `<!DOCTYPE>` declaration is not case sensitive.
+- The `<!DOCTYPE>` declaration for HTML5 is: `<!DOCTYPE html>`
 
-There are many browsers in the market: Chrome, Firefox, Safari, Opera, Internet Explorer, Edge and a few other ones. We
-will use Google Chrome, which is the most popular at the moment and a solid product. If you don't have it installed, you
-can download it from [https://www.google.com/chrome/](https://www.google.com/chrome/).
+## HTML basics
 
-<img src="./chrome.png" width="100" height="100" />
+- All HTML documents must start with a document type declaration: `<!DOCTYPE html>`.
+- The HTML document itself begins with `<html>` and ends with `</html>`.
+- The visible part of the HTML document is between `<body>` and `</body>`.
+- HTML headings are defined with the `<h1>` to `<h6>` tags.
+- `<h1>` defines the most important heading.
+- `<h6>` defines the least important heading.
+- HTML paragraphs are defined with the `<p>` tag: `<p>This is a paragraph</p>`.
 
-## A good folder structure
+## Examples
 
-We will follow conventions to make it is easier for each of us to see and understand the different projects. We will
-create a folder called ReDI HTML&CSS Lessons and inside that folder we will make one new folder per project. Each
-project folder will have two extra folders; one for all the images, called img and one for the css files. At root level
-(that is, inside the project folder) we will have the different HTML files.
+<h1>This is h1, the biggest HTML heading</h1>
+<h2>This is h2, smaller than h1</h2>
+<h3>This is h3, as you've guessed</h3>
+<h4>This is how the h4 looks like</h4>
+<h5>This is h5, quite small</h5>
+<h6>This is h6, the smallest one</h6>
+<p>This is a paragraph. Browsers do not display the HTML tags, but use them to render the content of the page. It's
+important to use the right HTML tags for each content element. Semantics are important: a well structured HTML document
+will be rendered correctly by all browsers and properly scanned and stored by the search engines.</p>
 
-<img src="./folders.png" width="200" height="149" />
+## Quick Exercise
 
-## Microsoft Teams
+Take the HTML file that you code before (the one with `h1` and `p`) and add `h2`, `h3`, `h4`, `h5` and `h6`.
 
-There are many communication tools, but we officially chose Microsoft Teams. There we have a channel for the class where 
-we can share materials, examples, links, updates about the classes etc. Everyone is on that channel so let's check if we have
-it installed and is working. If it's not on your computer, you can download it from [https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software](https://teams.microsoft.com).
+**IMPORTANT**: Remember to always close the tags; if you open with `<h3>`, you close with `</h3>`.
 
-<img src="./teams.png" width="100" height="100" />
+## Unordered and ordered lists
+
+Lists are one of the most used HTML tags. There are two kind of lists:
+
+## Unordered Lists
+
+<ul>
+  <li>This is the first item</li>
+  <li>This is the second item</li>
+  <li>This is the third item</li>
+  <li>This is the fourth item</li>
+</ul>
+
+## Ordered Lists
+
+<ol>
+  <li>This is the first item</li>
+  <li>This is the second item</li>
+  <li>This is the third item</li>
+  <li>This is the fourth item</li>
+</ol>
+
+## Another Quick Exercise
+
+Now add two lists to the HTML file: `ol` and `ul`.
+
+**IMPORTANT**: Remember that each item on a list should open with `<li>` and closed with `</li>`.
+
+## Exercise on paper
+
+Let's recognize headings, paragraphs and lists on our paper websites
+
+1. Using a colored marker, write on your website which elements you are using:
+2. Mark the different headings as `h1`, `h2`, `h3`...
+3. Mark all the paragraphs
+4. Do you have lists?
+5. Mark the navigation as a list
+
+**Learn more**:
+
+- [W3Schools: HTML Documents, Headings, Paragraphs and Lists](https://www.w3schools.com/html/html_basic.asp)

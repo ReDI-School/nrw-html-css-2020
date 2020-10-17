@@ -1,79 +1,105 @@
 ---
-title: CSS Specificity
-nav_order: 13
+title: HTML Tables
+nav_order: 15
 ---
 
-# CSS Specificity
+# HTML Tables
 
-Specificity is a great tool to manage the power of CSS but can be complicated. As we will see, not all selectors are
-equal in "power":
+The table element represents data with more than one dimension, in the form of a table. Tables have rows, columns, and cells given by their descendants. The rows and columns form a grid; a table’s cells must completely cover that grid without overlap.
 
-- If there are two or more rules that apply to an element, the most specific selector is used
-- If the two rules have equal specificity, then the latest rule is applied
+An HTML table is defined with the `<table>` tag.
 
-Let's check this example. Which one is more important?
+Each **table row** is defined with the <tr> tag. A **table header** is defined with the `<th>` tag. By default, table headings are bold and centered. A **table data/cell** is defined with the `<td>` tag.
+
+Example 
+
+<table style="width: 50%;" border="1">
+    <caption>
+      Bundesliga
+    </caption>
+    <tr>
+      <th>Position</th>
+      <th>Team</th>
+      <th>Matches Played</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Dortmund</td>
+      <td>6</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Hoffenheim</td>
+      <td>6</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Bayern Muenchen</td>
+      <td>6</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hannover 96</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+  </table>
+
+
+
 
 ```
-li {
-    color:green;
-}
-li.special {
-    color:red;
-}
-```
-
-**What about now?**
-
-```
-li#special {
-    color:green;
-}
-li.special {
-    color:red;
-}
-```
-
-**How does it works**
-
-- Specificity determines, which CSS rule is applied by the browsers
-- Specificity is usually the reason why your CSS-rules don’t apply to some elements, although you think they should
-- Every selector has its place in the specificity hierarchy
-- If two selectors apply to the same element, the one with higher specificity wins.
-- There are four distinct categories which define the specificity level of a given selector: inline styles, IDs,
-classes, attributes, and elements
-- When selectors have an equal specificity value, the latest rule is the one that counts
-- When selectors have an unequal specificity value, the more specific rule is the one that counts
-- Rules with more specific selectors have a greater specificity
-- The last rule defined overrides any previous, conflicting rules
-- The embedded style sheet has a greater specificity than other rules
-- ID selectors have a higher specificity than attribute selectors
-- You should always try to use IDs to increase the specificity
-- A class selector beats any number of element selectors
-- The universal selector and inherited selectors have a specificity of 0, 0, 0, 0
-
-**Let's take a look at how the numbers are actually calculated:**
-
-![Specificity](specificity.png)
-
-- If the element has inline styling, that automatically1 wins (1,0,0,0 points)
-- For each ID value, apply 0,1,0,0 points
-- For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points
-- For each element reference, apply 0,0,0,1 point
-
-You can generally read the values as if they were just a number, like 1,0,0,0 is "1000", and so clearly wins over a
-specificity of 0,1,0,0 or "100". The commas are there to remind us that this isn't really a "base 10" system, in that
-you could technically have a specificity value of like 0,1,13,4 - and that "13" doesn't spill over like a base 10 system
-would.
-
-**Let's see some very good examples**
-
-- [CSS Specificity Wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html)
-- [CSS Bento Box](https://flukeout.github.io/)
+ <table>
+    <caption>
+      Bundesliga
+    </caption>
+    <tr>
+      <th>Position</th>
+      <th>Team</th>
+      <th>Matches Played</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Dortmund</td>
+      <td>6</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Hoffenheim</td>
+      <td>6</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Bayern Muenchen</td>
+      <td>6</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hannover 96</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+  </table>
+  ```
 
 
-**Learn more**:
+The `<thead>` tag is used to group header content in an HTML table. It is used in conjunction with the `<tbody>` and `<tfoot>` elements to specify each part of a table (header, body, footer).
 
-- [W3Schools: CSS Specificity](https://www.w3schools.com/css/css_specificity.asp)
-- [CSS Tricks: Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
-- [Smashing Magazine: CSS Specificity Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
 
+### Examples
+
+Another examples of tables can be found in tennis scoreboards, stock markets, weather widgets, calendars etc. Tables offer interesting styling options. We can practice with this [stock market table](./nasdaq.html).
+
+## Learn more
+
+- [W3Schools: HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+- [CSS-Tricks: A Complete Guide to the Table Element](https://css-tricks.com/complete-guide-table-element/)

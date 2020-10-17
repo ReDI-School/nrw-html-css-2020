@@ -1,93 +1,55 @@
 ---
-title: CSS Selectors
-nav_order: 12
+title: CSS Layout
+nav_order: 14
 ---
 
-# CSS Selectors
+# CSS Layout
 
-The three most used CSS Selectors are the Element, the ID and the Class.
+## Document Flow
 
-## The element selector selects elements based on the element name
+Document flow refers to the way the browser positions elements on the page. The browser starts at the top left of the page and starts placing elements one after another.
 
-```
-h1 {
-    color: #990000;
-    border-bottom: #990000;
-}
-```
+Document flow is most affected by a property called display. There are two main display properties: block and inline.
 
-## The ID Selector uses the id attribute of an HTML element to select a specific element
+### Display Block
 
-- In HTML, you identify an element with an ID this way: `<h1 id="title">`
-- In CSS, you refer to that ID using the hashtag: `#title`
-- **Important rule**: there should be only one ID per page **with the same name**. There could be many IDs, but all of
-them should have different names
+**Block** elements expand to the **full width** of the available horizontal space. The next element will be placed underneath. A div is an example of a block level element. It expands to the full width of the available space.
 
-```
-<h1 id="title">Welcome to ReDI School</h1>
+### Display Inline
 
-#title {
-    color: #ffffff;
-    border-bottom: #59ADC5;
-}
-```
+**Inline** level elements are **only as wide as their content**. Multiple inline elements stack up next to each other and can be nested inside block level elements. A span is an example of an inline level element.
 
-## The class selector selects elements with a specific class attribute
+Block level elements are used for large pieces of content such as headings or text areas. Inline level elements are used to style small areas, such as adding italics to a few words.
 
-- In HTML, you add a Class to an element this way: `<ul class="nobullets">`
-- In CSS, you refer to that Class using a dot: `.nobullets`
-- There is no limit to the number of classes per HTML file so you can have as many as you want but...if you find
-yourself adding too many on one page, there's probably an easier way to do it :)
+### Display Inline-Block
 
-```
-<ul class="nobullets">
+Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
 
-.nobullets {
-    list-style-type:none;
-}
-```
+Also, with display: inline-block, the top and bottom margin and padding are respected, but with display: inline they are not.
 
-## You can combine IDs with Class
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
 
-```
-<h1 id="title" class="bigger">Welcome to ReDI School</h1>
+### Block level elements
 
-h1 {
-    font-family: sans-serif;
-}
-#title {
-    color: #ffffff;
-    border-bottom: #59ADC5;
-}
-.bigger {
-    font-size:125%;
-}
-```
+- header, footer, nav, section, main, div, table, form
+- ul, ol, p
+- h1, h2, h3, h4, h5, h6
 
-## IDs and Classes best practices
+### Inline level elements
 
-- Use IDs to identify main areas of a page: header, footer, content, main navigation, a photo gallery etc.
-- Use classes to mark the exceptions in the code
- - For example, if you will remove the bullets from every `ul`, you don't need to apply a class to every UL, you can
- define that in the `ul`
-- Take advantage of the tree structure of an HTML document: style first for the main tags and then go deeper.
- - For example, apply the text styling to `body`, so you don't have to add it to `p`, `li` or any other element.
+- strong, em
+- span, img, a
+- button, input, label, select, textarea
 
-## Nested selectors
+### CSS property display
 
-Selectors can be nested to give you more precise control.
+Using the CSS property display we can override the default display setting and change an element to be block or inline. This is useful because it's not possible to set the width or height of inline level elements. We can also hide an element by setting display: none;
 
-```
-<div id="header">
-    <a href="#home">Home</a>
-</div>
+### Layout Example
 
-#header a {
-    color: #0066CC;
-}
-```
+![Layout Example](layout.jpg)
 
-**Learn more**:
+Learn more
 
-- [W3Schools: CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp)
-- [W3Schools: CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [W3Schools: CSS Display Property](https://www.w3schools.com/css/css_display_visibility.asp)
+- [W3Schools: CSS Display Inline Block](https://www.w3schools.com/css/css_inline-block.asp)

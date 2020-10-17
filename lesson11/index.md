@@ -1,75 +1,79 @@
 ---
-title: CSS Styling
-nav_order: 11
+title: CSS Specificity
+nav_order: 13
 ---
 
-# CSS Styling
+# CSS Specificity
 
-## Let's style our document
+Specificity is a great tool to manage the power of CSS but can be complicated. As we will see, not all selectors are
+equal in "power":
 
-CSS is very powerful and there is a lot we can do with it, but we need to start somewhere. Let's keep it simple, by
-using the most common CSS properties:
+- If there are two or more rules that apply to an element, the most specific selector is used
+- If the two rules have equal specificity, then the latest rule is applied
 
-### Paragraphs, headings, list items, links `<p>`, `<h1>` to `<h6>`, `<li>`, `<a>`
-
-- `color: #FF9900;` (hex value, name, rgb, rgba)
-- `text-align: left;` (center, right, justify)
-- `font-size: 16px;` (px, em, rem, %)
-- `font-weight: bold;` (normal, bold)
-- `font-style: italic;` (normal, italic)
-- `background-color: #660000;` (hex value, name, rgb, rgba)
-
-### Box elements
-
-Well...every element is a box, but let's focus on `<div>`, `<ul>`, `<ol>` and also the previous text elements.
-
-- `width: 500px;` (px, em, rem, %)
-- `height: 250px;` (px, em, rem)
-- `border: 5px solid #CC0000;` (px, em, rem; solid, dotted, dashed; hex, name, rgb, rgba)
-- `padding: 10px 20px 10px 20px;` (px, em, rem)
-- `margin: 10px auto 30px auto;` (px, em, rem)
-
-### Here is an example
+Let's check this example. Which one is more important?
 
 ```
-div {
-    background-color: #eeeeaa;
-    padding: 16px 24px;
-    margin: 32px auto;
-    border: 3px solid #00cc00;
-    width:50%;
+li {
+    color:green;
 }
-p {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    color: #990000;
+li.special {
+    color:red;
 }
 ```
 
-### The Result:
+**What about now?**
 
-<div style="background-color: #eeeeaa; padding: 16px 24px; margin: 32px auto; border: 3px solid #00cc00; width:50%;">
-    <p style="text-align: center; font-size: 24px; font-weight: bold; font-style: italic; color: #990000;">Look at me, I
-    know latin! Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Maecenas aliquet accumsan leo. Nulla quis diam. Nullam eget nisl. Praesent dapibus. Pellentesque ipsum. Mauris tincidunt
-sem sed arcu. Etiam quis quam. Nullam at arcu a est sollicitudin euismod. Aenean fermentum  risus id tortor.</p>
-</div>
+```
+li#special {
+    color:green;
+}
+li.special {
+    color:red;
+}
+```
 
-## Let's see CSS at work
+**How does it works**
 
-Here is the [Museum's page](./museums.html) example.
+- Specificity determines, which CSS rule is applied by the browsers
+- Specificity is usually the reason why your CSS-rules don’t apply to some elements, although you think they should
+- Every selector has its place in the specificity hierarchy
+- If two selectors apply to the same element, the one with higher specificity wins.
+- There are four distinct categories which define the specificity level of a given selector: inline styles, IDs,
+classes, attributes, and elements
+- When selectors have an equal specificity value, the latest rule is the one that counts
+- When selectors have an unequal specificity value, the more specific rule is the one that counts
+- Rules with more specific selectors have a greater specificity
+- The last rule defined overrides any previous, conflicting rules
+- The embedded style sheet has a greater specificity than other rules
+- ID selectors have a higher specificity than attribute selectors
+- You should always try to use IDs to increase the specificity
+- A class selector beats any number of element selectors
+- The universal selector and inherited selectors have a specificity of 0, 0, 0, 0
 
-## Some sources for colors
+**Let's take a look at how the numbers are actually calculated:**
 
-- [Coolors.co](https://coolors.co/)
-- [Color-hex.com](https://www.color-hex.com/color-palettes/)
-- [Colorsupplyyy.com](https://colorsupplyyy.com/)
+![Specificity](specificity.png)
+
+- If the element has inline styling, that automatically1 wins (1,0,0,0 points)
+- For each ID value, apply 0,1,0,0 points
+- For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points
+- For each element reference, apply 0,0,0,1 point
+
+You can generally read the values as if they were just a number, like 1,0,0,0 is "1000", and so clearly wins over a
+specificity of 0,1,0,0 or "100". The commas are there to remind us that this isn't really a "base 10" system, in that
+you could technically have a specificity value of like 0,1,13,4 - and that "13" doesn't spill over like a base 10 system
+would.
+
+**Let's see some very good examples**
+
+- [CSS Specificity Wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html)
+- [CSS Bento Box](https://flukeout.github.io/)
+
 
 **Learn more**:
 
-- [W3Schools: CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp)
-- [W3Schools: CSS Colors](https://www.w3schools.com/css/css_colors.asp)
-- [W3Schools: CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [W3Schools: CSS Specificity](https://www.w3schools.com/css/css_specificity.asp)
+- [CSS Tricks: Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+- [Smashing Magazine: CSS Specificity Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 

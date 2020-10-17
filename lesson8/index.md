@@ -1,95 +1,68 @@
 ---
-title: HTML Basics - More Exercises
-nav_order: 8
+title: Intro to CSS
+nav_order: 10
 ---
 
-# HTML Basics - More Exercises
+# Intro to CSS
 
-## What we have learned so far
+## What is CSS?
 
-In these first weeks we've learned the basic HTML tags and did a couple of exercises. Let's review them again before
-going back to our websites. This is what we've learned:
+CSS stands for Cascading Style Sheet. It describes how HTML elements are to be displayed on different screens and in print. It works on top of the HTML and makes use of the tree-structure of the HTML documents. The HTML elements inherit stylistic properties through CSS.
 
-- **Headings**: use `h1` to `h6`
-- **Paragraphs**: use `p`
-- **Unordered lists**: write them with `ul`. Each item on the list is wrapped with `li`
-- **Ordered lists**: write them with `ol`. Each item on the list is wrapped with `li`
-- **Links**: you open the link with `a href=""` and close it with `/a`. Inside the quotes you write where the link will
-point to
-- **Image links**: Instead of wrapping text with `<a href="">` and `</a>`, you wrap an image.
-- **HTML comments**: Anything you place between `<!--` and `-->` will be hidden for the browsers.
+### How do we write CSS?
 
-## Exercises
-
-### Which code snippet is right?
-
-Please compare carefully [the four options](./correct-render.pdf) and choose the correct one.
-
-### Find the errors
-
-You can see the examples below or [check the errors on a pdf](./find-the-errors.pdf).
+Here's a sintax example of a CSS rule:
 
 ```
-EXAMPLE ONE
-
-<h1>Welcome to ReDI school!</h2>
-<p>We are learning how to do a page with</p>
-<ul>
-    <li>headings</li>
-    <li>paragraphs</li><!--
-    <li>unordered lists</li>
-    <li>ordered lists
-    </li>
-    <li>images</li>
-    <li>links</li>
-    <li>comments</li>
-</ul>
-
-
-EXAMPLE TWO
-
-<h2>Welcome to ReDI school!</h2>
-<p>We are learning how to do a page with</p>
-<h3>
-    <li>headings</li>
-    <li>paragraphs</li>
-    <li>unordered lists</li>
-    <li>ordered lists</li>
-    <li>images</li>
-    <ul>links</li>
-    <li>comments</ul>
-</h3>
-
-
-EXAMPLE THREE
-
-<h1>Welcome to ReDI school!</h1>
-<ul>
-<p>We are learning how to do a page with</p>
-    <li>headings</li>
-    <li>paragraphs</li>
-    <li>unordered lists</li>
-    <li>ordered lists</li>
-    <li>images</li>
-    <li>links</li>
-    <li>comments</li>
-</ul>
+selector {
+    property: value;
+}
 ```
 
-### This is the HTML; what will the browser show?
+### How does it work?
+
+- The selector points to the HTML element you want to style
+- The declaration block contains one or more declarations separated by semicolons.
+- Each declaration includes a CSS property name and a value, separated by a colon.
+- A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
 
 ```
-<!-- Welcome -->
-<h1>Welcome to ReDI school!</h1>
-<p>We are learning how to do a page with</p>
-<ul>
-    <li>headings</li><!-- h1 to h6 -->
-    <li>paragraphs</li><!--
-    --><li>unordered lists</li>
-    <li>ordered lists</li>
-    <li>images</li>
-    <li>links</li><!--
-    <li>comments</li>-->
-</ul>
+h4 {
+    color: #0066CC;
+    font-style: italic;
+}
 ```
+
+<h4 style="color: #0066CC; font-style: italic;">This is how the h4 with #0066CC color and italic font style it looks.</h4>
+
+## Let's see CSS at work
+
+Here is the [Museum's page](./museums.html) example. Let's do some really basic styling.
+
+## The box model
+
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of margins, borders, padding, and the actual content.
+
+
+- **Content**: The content of the box, where text and images appear
+- **Padding**: Clears an area around the content. The padding is transparent
+- **Border**: A border that goes around the padding and content
+- **Margin**: Clears an area outside the border. The margin is transparent
+
+## CSS most used properties
+
+| Property            |  Values                                                | Used with Elements                          |
+| ------------------- | ------------------------------------------------------ | --------------------------------------------|
+| color               | #RRGGBB (Red, Green, Blue hex values)                  | any element that contains text              |
+| text-align          | left \| right \| center \| justify                     | block elements `h1`...`h6`, `p`, `li`, etc. |
+| text-decoration     | none \| underline \| overline \| line-through \| blink | mostly with a (anchor) elements             |
+| text-transformation | none \| capitalize \| uppercase \| lowercase           | any element that contains text              |
+| line-height         | % or em/rem/px                                         | block elements `h1`...`h6`, `p`, `li`, etc. |
+| letter-spacing      | normal or em/rem/px value                              | any element that contains text              |
+| font-family         | font or font-family [, font or font-family ...]        | any element that contains text              |
+| font-size           | em/rem/px value                                        | any element that contains text              |
+| font-style          | normal \| italic \| oblique                            | any element that contains text              |
+| font-weight         | normal \| bold                                         | any element that contains text              |
 
