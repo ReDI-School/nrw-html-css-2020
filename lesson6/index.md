@@ -19,6 +19,12 @@ point to
 - **Image links**: Instead of wrapping text with `<a href="">` and `</a>`, you wrap an image.
 - **HTML comments**: Anything you place between `<!--` and `-->` will be hidden for the browsers.
 
+## New Tags
+
+- `<span>` ([documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span))
+- `<button>` ([documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button))
+- `<input>` ([documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)). Explain a few different types of input, like text, email, password, checkbox, radio.
+
 ## Exercises
 
 ### Which code snippet is right?
