@@ -19,43 +19,21 @@ using the most common CSS properties:
 - `font-style: italic;` (normal, italic)
 - `background-color: #660000;` (hex value, name, rgb, rgba)
 
-### Box elements
+## CSS most used properties
 
-Well...every element is a box, but let's focus on `<div>`, `<ul>`, `<ol>` and also the previous text elements.
+| Property            |  Values                                                | Used with Elements                          |
+| ------------------- | ------------------------------------------------------ | --------------------------------------------|
+| color               | #RRGGBB (Red, Green, Blue hex values)                  | any element that contains text              |
+| text-align          | left \| right \| center \| justify                     | block elements `h1`...`h6`, `p`, `li`, etc. |
+| text-decoration     | none \| underline \| overline \| line-through \| blink | mostly with a (anchor) elements             |
+| text-transformation | none \| capitalize \| uppercase \| lowercase           | any element that contains text              |
+| line-height         | % or em/rem/px                                         | block elements `h1`...`h6`, `p`, `li`, etc. |
+| letter-spacing      | normal or em/rem/px value                              | any element that contains text              |
+| font-family         | font or font-family [, font or font-family ...]        | any element that contains text              |
+| font-size           | em/rem/px value                                        | any element that contains text              |
+| font-style          | normal \| italic \| oblique                            | any element that contains text              |
+| font-weight         | normal \| bold                                         | any element that contains text              |
 
-- `width: 500px;` (px, em, rem, %)
-- `height: 250px;` (px, em, rem)
-- `border: 5px solid #CC0000;` (px, em, rem; solid, dotted, dashed; hex, name, rgb, rgba)
-- `padding: 10px 20px 10px 20px;` (px, em, rem)
-- `margin: 10px auto 30px auto;` (px, em, rem)
-
-### Here is an example
-
-```
-div {
-    background-color: #eeeeaa;
-    padding: 16px 24px;
-    margin: 32px auto;
-    border: 3px solid #00cc00;
-    width:50%;
-}
-p {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    color: #990000;
-}
-```
-
-### The Result:
-
-<div style="background-color: #eeeeaa; padding: 16px 24px; margin: 32px auto; border: 3px solid #00cc00; width:50%;">
-    <p style="text-align: center; font-size: 24px; font-weight: bold; font-style: italic; color: #990000;">Look at me, I
-    know latin! Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Maecenas aliquet accumsan leo. Nulla quis diam. Nullam eget nisl. Praesent dapibus. Pellentesque ipsum. Mauris tincidunt
-sem sed arcu. Etiam quis quam. Nullam at arcu a est sollicitudin euismod. Aenean fermentum  risus id tortor.</p>
-</div>
 
 ## Let's see CSS at work
 
