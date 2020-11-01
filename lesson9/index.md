@@ -11,14 +11,15 @@ CSS stands for Cascading Style Sheet.
 It describes how HTML elements are to be displayed on different screens and in print.
 It works on top of the HTML and makes use of the tree-structure of the HTML documents.
 The HTML elements inherit stylistic properties through CSS.
+Helps us add colors, sizes, order, position, hiding, showing, animatin etc.
 
 ### How do we write CSS?
 
 Here is a very basic CSS style:
 
-```
+```css
 h1 {
-    color: #0066CC;
+    color: red;
 }
 ```
 
@@ -32,27 +33,37 @@ selector {
 }
 ```
 
-- The selector points to the HTML element you want to style
+- The **selector** points to the HTML element you want to style
 - The declaration block (within the curly braces) contains one or more declarations separated by semicolons.
-- Each declaration includes a CSS property name and a value, separated by a colon.
-- A CSS declaration always ends with a semicolon.
+- Each declaration includes a CSS **property** name and a **value**, separated by a colon.
+Find full list of CSS Properties [here](https://meiert.com/en/indices/css-properties/).
+- `red` - this is one way of defining color in CSS. This is called a `named color`. [Here](https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/) is a full list of named colors that CSS understands. CSS also understands hex values like `#ff0000`, and rgb(255, 0, 0);
+- A CSS declaration **always** ends with a semicolon.
+- So in sumarry, it reads like: If this condition is true, then apply this/these style(s).
+
+### Another example
+```css
+h1 {
+    /*
+     *  Note px is a unit of measurement in CSS.
+     *  Other units will be covered later
+     */
+    font-size: 60px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: pink;
+
+    /* This is a CSS Combined property. */
+    border: 3px solid pink
+}
+```
 
 ### Where to put your styles
 
 - Inline
 - Style tag
 - CSS File
-
-```
-h4 {
-    color: limegreen;
-    font-family: Helvetica;
-    font-size: 60px;
-}
-```
-
-<h4 style="color: #0066CC; font-style: italic;">This is how the h4 with #0066CC color and italic font style it looks.</h4>
-
 
 ### Parent, Children, Sibling, Ancestor, Descendant
 - An element that directly contains other elements is a **parent** of the elements that it contains.
@@ -63,7 +74,26 @@ h4 {
 
 More details [here](http://www.littlewebhut.com/css/info_element_relationships/)
 
-## Let's see CSS at work
+#### Example
+
+```html
+    <div>
+        <h1>Museums in Berlin</h1>
+        <div>
+            <p>I am a paragraph!</p>
+        </div>
+    </div>
+```
+
+```css
+    div {
+        color: blue
+    }
+```
+
+The `p` will be colored blue.
+
+## CSS at work
 
 Here is the [Museum's page](./museums.html) example. Let's do some really basic styling.
 
