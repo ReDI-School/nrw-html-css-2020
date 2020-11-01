@@ -1,5 +1,5 @@
 ---
-title: CSS Styling; The Box Model
+title: The Box Model
 nav_order: 11
 ---
 

@@ -7,11 +7,15 @@ nav_order: 10
 
 ## What is CSS?
 
-CSS stands for Cascading Style Sheet. It describes how HTML elements are to be displayed on different screens and in print. It works on top of the HTML and makes use of the tree-structure of the HTML documents. The HTML elements inherit stylistic properties through CSS.
+CSS stands for Cascading Style Sheet.
+It describes how HTML elements are to be displayed on different screens and in print.
+It works on top of the HTML and makes use of the tree-structure of the HTML documents.
+The HTML elements inherit stylistic properties through CSS.
 
 ### How do we write CSS?
 
 Here is a very basic CSS style:
+
 ```
 h1 {
     color: #0066CC;
@@ -34,6 +38,7 @@ selector {
 - A CSS declaration always ends with a semicolon.
 
 ### Where to put your styles
+
 - Inline
 - Style tag
 - CSS File
@@ -71,6 +76,13 @@ Teacher's Note: Apply styles on live editor.
 - `font-style: italic;` (normal, italic)
 - `background-color: #660000;` (hex value, name, rgb, rgba)
 
+## Comments
+```
+h1 {
+    /* this is a comment */
+    color: #0066CC;
+}
+```
 
 ## Some sources for colors
 

@@ -73,6 +73,9 @@ h1 {
 - Take advantage of the tree structure of an HTML document: style first for the main tags and then go deeper.
  - For example, apply the text styling to `body`, so you don't have to add it to `p`, `li` or any other element.
 
+## !important
+
+
 ## Nested selectors
 
 Selectors can be nested to give you more precise control.
