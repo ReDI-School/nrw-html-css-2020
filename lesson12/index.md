@@ -1,55 +1,56 @@
 ---
-title: CSS Layout
-nav_order: 14
+title: CSS Styling; The Box Model
+nav_order: 11
 ---
 
-# CSS Layout
+# CSS Styling
 
-## Document Flow
+## The box model
 
-Document flow refers to the way the browser positions elements on the page. The browser starts at the top left of the page and starts placing elements one after another.
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
 
-Document flow is most affected by a property called display. There are two main display properties: block and inline.
+The CSS box model is essentially a box that wraps around every HTML element. It consists of margins, borders, padding, and the actual content.
 
-### Display Block
+- **Content**: The content of the box, where text and images appear
+- **Padding**: Clears an area around the content. The padding is transparent
+- **Border**: A border that goes around the padding and content
+- **Margin**: Clears an area outside the border. The margin is transparent
 
-**Block** elements expand to the **full width** of the available horizontal space. The next element will be placed underneath. A div is an example of a block level element. It expands to the full width of the available space.
+### Box elements styles
 
-### Display Inline
+Well...every element is a box, but let's focus on `<div>`, `<ul>`, `<ol>` and also the previous text elements.
 
-**Inline** level elements are **only as wide as their content**. Multiple inline elements stack up next to each other and can be nested inside block level elements. A span is an example of an inline level element.
+- `width: 500px;` (px, em, rem, %)
+- `height: 250px;` (px, em, rem)
+- `border: 5px solid #CC0000;` (px, em, rem; solid, dotted, dashed; hex, name, rgb, rgba)
+- `padding: 10px 20px 10px 20px;` (px, em, rem)
+- `margin: 10px auto 30px auto;` (px, em, rem)
 
-Block level elements are used for large pieces of content such as headings or text areas. Inline level elements are used to style small areas, such as adding italics to a few words.
+### Here is an example
 
-### Display Inline-Block
+```
+div {
+    background-color: #eeeeaa;
+    padding: 16px 24px;
+    margin: 32px auto;
+    border: 3px solid #00cc00;
+    width:50%;
+}
+p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #990000;
+}
+```
 
-Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+### The Result:
 
-Also, with display: inline-block, the top and bottom margin and padding are respected, but with display: inline they are not.
+<div style="background-color: #eeeeaa; padding: 16px 24px; margin: 32px auto; border: 3px solid #00cc00; width:50%;">
+    <p style="text-align: center; font-size: 24px; font-weight: bold; font-style: italic; color: #990000;">Look at me, I
+    know latin! Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Maecenas aliquet accumsan leo. Nulla quis diam. Nullam eget nisl. Praesent dapibus. Pellentesque ipsum. Mauris tincidunt
+sem sed arcu. Etiam quis quam. Nullam at arcu a est sollicitudin euismod. Aenean fermentum  risus id tortor.</p>
+</div>
 
-Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
-
-### Block level elements
-
-- header, footer, nav, section, main, div, table, form
-- ul, ol, p
-- h1, h2, h3, h4, h5, h6
-
-### Inline level elements
-
-- strong, em
-- span, img, a
-- button, input, label, select, textarea
-
-### CSS property display
-
-Using the CSS property display we can override the default display setting and change an element to be block or inline. This is useful because it's not possible to set the width or height of inline level elements. We can also hide an element by setting display: none;
-
-### Layout Example
-
-![Layout Example](layout.jpg)
-
-Learn more
-
-- [W3Schools: CSS Display Property](https://www.w3schools.com/css/css_display_visibility.asp)
-- [W3Schools: CSS Display Inline Block](https://www.w3schools.com/css/css_inline-block.asp)

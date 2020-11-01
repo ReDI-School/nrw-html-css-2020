@@ -1,16 +1,68 @@
 ---
-title: CSS Styling
-nav_order: 11
+title: Intro to CSS
+nav_order: 10
 ---
 
-# CSS Styling
+# Intro to CSS
 
-## Let's style our document
+## What is CSS?
 
-CSS is very powerful and there is a lot we can do with it, but we need to start somewhere. Let's keep it simple, by
-using the most common CSS properties:
+CSS stands for Cascading Style Sheet. It describes how HTML elements are to be displayed on different screens and in print. It works on top of the HTML and makes use of the tree-structure of the HTML documents. The HTML elements inherit stylistic properties through CSS.
 
-### Paragraphs, headings, list items, links `<p>`, `<h1>` to `<h6>`, `<li>`, `<a>`
+### How do we write CSS?
+
+Here is a very basic CSS style:
+```
+h1 {
+    color: #0066CC;
+}
+```
+
+### Explaining the structure
+
+Explaining the structure of CSS styles:
+
+```
+selector {
+    property: value;
+}
+```
+
+- The selector points to the HTML element you want to style
+- The declaration block (within the curly braces) contains one or more declarations separated by semicolons.
+- Each declaration includes a CSS property name and a value, separated by a colon.
+- A CSS declaration always ends with a semicolon.
+
+### Where to put your styles
+- Inline
+- Style tag
+- CSS File
+
+```
+h4 {
+    color: limegreen;
+    font-family: Helvetica;
+    font-size: 60px;
+}
+```
+
+<h4 style="color: #0066CC; font-style: italic;">This is how the h4 with #0066CC color and italic font style it looks.</h4>
+
+
+### Parent, Children, Sibling, Ancestor, Descendant
+- An element that directly contains other elements is a **parent** of the elements that it contains.
+- An element that is directly contained within another element is a **child** of the element that contains it.
+- Elements are **sibling elements** if they share the same parent element.
+- An element that contains (at any level) other elements is an **ancestor** of the elements that it contains.
+- An element that is contained (at any level) within another element is a **descendant** of the element that contains it.
+
+More details [here](http://www.littlewebhut.com/css/info_element_relationships/)
+
+## Let's see CSS at work
+
+Here is the [Museum's page](./museums.html) example. Let's do some really basic styling.
+
+Teacher's Note: Apply styles on live editor.
 
 - `color: #FF9900;` (hex value, name, rgb, rgba)
 - `text-align: left;` (center, right, justify)
@@ -19,25 +71,6 @@ using the most common CSS properties:
 - `font-style: italic;` (normal, italic)
 - `background-color: #660000;` (hex value, name, rgb, rgba)
 
-## CSS most used properties
-
-| Property            |  Values                                                | Used with Elements                          |
-| ------------------- | ------------------------------------------------------ | --------------------------------------------|
-| color               | #RRGGBB (Red, Green, Blue hex values)                  | any element that contains text              |
-| text-align          | left \| right \| center \| justify                     | block elements `h1`...`h6`, `p`, `li`, etc. |
-| text-decoration     | none \| underline \| overline \| line-through \| blink | mostly with a (anchor) elements             |
-| text-transformation | none \| capitalize \| uppercase \| lowercase           | any element that contains text              |
-| line-height         | % or em/rem/px                                         | block elements `h1`...`h6`, `p`, `li`, etc. |
-| letter-spacing      | normal or em/rem/px value                              | any element that contains text              |
-| font-family         | font or font-family [, font or font-family ...]        | any element that contains text              |
-| font-size           | em/rem/px value                                        | any element that contains text              |
-| font-style          | normal \| italic \| oblique                            | any element that contains text              |
-| font-weight         | normal \| bold                                         | any element that contains text              |
-
-
-## Let's see CSS at work
-
-Here is the [Museum's page](./museums.html) example.
 
 ## Some sources for colors
 
