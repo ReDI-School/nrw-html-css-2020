@@ -1,6 +1,6 @@
 ---
 title: HTML Tables
-nav_order: 15
+nav_order: 16
 ---
 
 # HTML Tables
@@ -11,7 +11,7 @@ An HTML table is defined with the `<table>` tag.
 
 Each **table row** is defined with the <tr> tag. A **table header** is defined with the `<th>` tag. By default, table headings are bold and centered. A **table data/cell** is defined with the `<td>` tag.
 
-Example 
+Example
 
 <table style="width: 50%;" border="1">
     <caption>
