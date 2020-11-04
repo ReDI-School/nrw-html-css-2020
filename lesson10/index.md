@@ -74,7 +74,25 @@ h1 {
  - For example, apply the text styling to `body`, so you don't have to add it to `p`, `li` or any other element.
 
 ## !important
+Explain !important. And also why it is discouraged.
 
+## Relational selectors & Combinators
+- Descendant selector
+```css
+    ul li {
+        ...
+    }
+```
+
+- Child selector
+```css
+    ol > li {
+        ...
+    }
+```
+
+## Pseudo-classes
+:hover
 
 ## Nested selectors
 
