@@ -49,13 +49,6 @@ h1 {
      *  Other units will be covered later
      */
     font-size: 60px;
-
-    border-width: 3px;
-    border-style: solid;
-    border-color: pink;
-
-    /* This is a CSS Combined property. */
-    border: 3px solid pink
 }
 ```
 
@@ -64,6 +57,8 @@ h1 {
 - Inline
 - Style tag
 - CSS File
+
+Show how they override one another with the h1 color style above. Inline has the highest preference.
 
 ### Parent, Children, Sibling, Ancestor, Descendant
 - An element that directly contains other elements is a **parent** of the elements that it contains.
@@ -99,12 +94,21 @@ Here is the [Museum's page](./museums.html) example. Let's do some really basic 
 
 Teacher's Note: Apply styles on live editor.
 
-- `color: #FF9900;` (hex value, name, rgb, rgba)
-- `text-align: left;` (center, right, justify)
+- `color: #FF9900;`. This is an hex value. Another way to set color is rgb.
+- `text-align: center;` (can be center, right, justify)
+- `font-family: Helvetica` (Explain a bit about [web-safe fonts](https://web.mit.edu/jmorzins/www/fonts.html)). Also explain listing backup fonts example below
+- `font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;`
 - `font-size: 16px;` (px, em, rem, %)
 - `font-weight: bold;` (normal, bold)
 - `font-style: italic;` (normal, italic)
-- `background-color: #660000;` (hex value, name, rgb, rgba)
+- `font` - This is a CSS Shorthand property.
+- `border-width: 3px;`
+- `border-style: solid;`
+- `border-color: pink;`
+- `border: 3px solid pink;` This is a CSS Shorthand property.
+- `background-color: #660000;`
+- `background-image: url()`
+
 
 ## Comments
 ```
@@ -124,5 +128,3 @@ h1 {
 
 - [W3Schools: CSS Syntax and Selectors](https://www.w3schools.com/css/css_syntax.asp)
 - [W3Schools: CSS Colors](https://www.w3schools.com/css/css_colors.asp)
-- [W3Schools: CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
-
