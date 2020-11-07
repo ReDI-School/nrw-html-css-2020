@@ -2,6 +2,8 @@
 title: CSS Selectors
 nav_order: 12
 ---
+# First, a review of last class
+- In particular, the `CSS at work` section.
 
 # CSS Selectors
 
@@ -34,8 +36,8 @@ them should have different names
 
 ## The class selector selects elements with a specific class attribute
 
-- In HTML, you add a Class to an element this way: `<ul class="nobullets">`
-- In CSS, you refer to that Class using a dot: `.nobullets`
+- In HTML, you add a class to an element this way: `<ul class="nobullets">`
+- In CSS, you refer to that class using a dot: `.nobullets`
 - There is no limit to the number of classes per HTML file so you can have as many as you want but...if you find
 yourself adding too many on one page, there's probably an easier way to do it :)
 
@@ -47,36 +49,36 @@ yourself adding too many on one page, there's probably an easier way to do it :)
 }
 ```
 
-## You can combine IDs with Class
+## Prefer classes over IDs where possible
 
+```html
+    <h1 class="bigger">Welcome to ReDI School</h1>
 ```
-<h1 id="title" class="bigger">Welcome to ReDI School</h1>
 
-h1 {
-    font-family: sans-serif;
-}
-#title {
-    color: #ffffff;
-    border-bottom: #59ADC5;
-}
-.bigger {
-    font-size:125%;
-}
+```css
+    h1 {
+        font-family: sans-serif;
+    }
+
+    .bigger {
+        font-size:125%;
+        color: #ffffff;
+        border-bottom: #59ADC5;
+    }
 ```
 
 ## IDs and Classes best practices
 
-- Use IDs to identify main areas of a page: header, footer, content, main navigation, a photo gallery etc.
-- Use classes to mark the exceptions in the code
- - For example, if you will remove the bullets from every `ul`, you don't need to apply a class to every UL, you can
- define that in the `ul`
-- Take advantage of the tree structure of an HTML document: style first for the main tags and then go deeper.
- - For example, apply the text styling to `body`, so you don't have to add it to `p`, `li` or any other element.
+- ID selectors win over class selectors. So try to always use a class first.
+- If you want to apply a style for all element type (e.g every `ul` on the page), you don't need to apply a class to every UL, you can, you should use the element selector `ul`.
+- Take advantage of the tree structure of an HTML document: put styles on the parent in cases where those styles can be passed to the children. For example, apply the text styling to `body`, so you don't have to add it to `p`, `li` or any other element.
 
 ## !important
+
 Explain !important. And also why it is discouraged.
 
 ## Relational selectors & Combinators
+
 - Descendant selector
 ```css
     ul li {
