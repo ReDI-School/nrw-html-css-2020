@@ -11,3 +11,13 @@ Welcome to the homepage of the HTML & CSS course of NRW at [ReDI School](https:/
 
 On this site we collect all the materials like slides, exercises with solutions, ideas for projects
 as well as additional resources that you may/should look into.
+
+In this course we will learn how websites are made and teach you how to build your own.
+
+## Teachers
+
+* Vincent
+* Seun
+* Jessica
+* Heni
+* Baris
