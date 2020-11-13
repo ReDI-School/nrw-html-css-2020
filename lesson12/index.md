@@ -28,13 +28,13 @@ Well...every element is a box, but let's focus on `<div>`, `<ul>`, `<ol>` and al
 
 ### Here is an example
 
-```
+```css
 div {
     background-color: #eeeeaa;
     padding: 16px 24px;
     margin: 32px auto;
     border: 3px solid #00cc00;
-    width:50%;
+    width: 50%;
 }
 p {
     text-align: center;
