@@ -3,9 +3,7 @@ title: The Box Model
 nav_order: 14
 ---
 
-# CSS Styling
-
-## The box model
+# The Box Model
 
 All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
 
@@ -49,8 +47,15 @@ p {
 
 <div style="background-color: #eeeeaa; padding: 16px 24px; margin: 32px auto; border: 3px solid #00cc00; width:50%;">
     <p style="text-align: center; font-size: 24px; font-weight: bold; font-style: italic; color: #990000;">Look at me, I
-    know latin! Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Maecenas aliquet accumsan leo. Nulla quis diam. Nullam eget nisl. Praesent dapibus. Pellentesque ipsum. Mauris tincidunt
-sem sed arcu. Etiam quis quam. Nullam at arcu a est sollicitudin euismod. Aenean fermentum  risus id tortor.</p>
+    know latin! Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
+## box-sizing
+
+- width + padding + border = actual visible/rendered width of an element’s box
+- The default is a little counter-intuitive, hence we have [box-sizing](https://css-tricks.com/box-sizing/)
+
+
+## Learn more
+
+- [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
